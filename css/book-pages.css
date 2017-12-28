@@ -1,0 +1,453 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #B8D0D4;
+    font-family: 'Montserrat', serif;
+    font-size: 16px;
+}
+
+main {
+    font-size: 23px;
+    margin: 5% auto;
+    width: 97%;
+    max-width: 1150px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 3.5%;
+    background-color: #fff;
+}
+
+.book-details {
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 3%;
+    position: relative;
+    height: 580px;
+}
+
+.book-details figure {
+    width: 31%;
+    display: inline-block;
+}
+
+.book-details figure img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 3px 10px 3px lightslategray;
+}
+
+.book-details article {
+    position: relative;
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 4%;
+}
+
+.book-details article h2 {
+    letter-spacing: 1px;
+    font-size: 2em;
+    color: #2F2B35;
+    text-shadow: 2px 3px 5px gray;
+}
+
+.book-details article span > i {
+    font-size: 1em;
+    color: darkslateblue;
+}
+
+.book-details article > h6 {
+    font-weight: normal;
+    padding-bottom: 10px;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.book-details article span + span {
+    font-style: italic;
+    font-size: 0.7em;
+}
+
+.book-details article > p {
+    padding: 5px 0;
+    font-size: 0.8em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.book-details article > p a {
+    color: lightcoral;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.book-details article > p a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.book-details article p > span {
+    color: #000;
+    font-weight: normal;
+}
+
+.book-details .praise {
+    font-size: 0.85em;
+
+    text-align: justify;
+}
+
+.book-details .praise .quote {
+    margin-top: 1%;
+    color: #494949;
+}
+
+.book-details .praise .source {
+    padding: 5px 0;
+    color: lightslategray;
+    font-style: italic;
+}
+
+.buy-box {
+    width: 380px;
+    display: inline-block;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    position: absolute;
+    left: calc(67% - 190px);
+    bottom: 60px;
+    box-shadow: 1px 1px 5px lightslategray;
+}
+
+.buy-box h4 {
+    background-color: #EDF3F4;
+    line-height: 1.6em;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+.buy-box form {
+    padding: 1.5em 0.7em;
+    text-align: center;
+}
+
+.buy-box form input {
+    box-sizing: border-box;
+    padding: 8px;
+    height: 2.3em;
+    width: 2.8em;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+}
+.buy-box form button i {
+    font-size: 1.6em;
+}
+
+.buy-box form button {
+    margin: 0 0.7em;
+    background-color: #2F2B35;
+    border: none;
+    border-radius: 35px;
+    width: 60%;
+    color: #fff;
+    text-align: center;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    line-height: 3em;
+    outline: none;
+}
+
+.buy-box form button:hover {
+    cursor: pointer;
+    background-color: #5A5462;
+}
+
+.about-the-book {
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 2%;
+}
+
+.author, .about-the-book {
+    font-size: 0.7em;
+    text-align: justify;
+}
+
+.author p, .about-the-book p {
+    margin: 0.7em 0;
+    color: #757575;
+    line-height: 1.5em;
+
+}
+
+.author h3, .about-the-book h3 {
+    padding: 0.9em 0 0.6em 0;
+    font-size: 2.2em;
+    font-weight: 500;
+    color: #2F2B35;
+    text-shadow: 2px 3px 5px gray;
+}
+
+.author figure {
+    width: 280px;
+    float: right;
+    padding: 1% 0 1% 2.5%;
+}
+
+.author img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.details {
+    width: 40%;
+    float: left;
+}
+
+.summary {
+    width: 55%;
+    margin-left: 4.5%;
+    display: inline-block;
+}
+
+.details table {
+    color: #757575;
+    font-size: 1.3em;
+    border-spacing: 0;
+    margin-top: 0.9em;
+    border-top: 1px solid gainsboro;
+    outline: none;
+    align-content: flex-start;
+}
+
+.details tr:nth-child(odd) > td {
+    background-color: #F9F9F9;
+}
+
+.details td {
+    height: 2.5em;
+    width: 12em;
+    border-bottom: 1px solid gainsboro;
+}
+
+.details tr > td:first-child {
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.details td + td {
+    font-style: italic;
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 711px) {
+
+    main {
+        font-size: 23px;
+        width: 800px;
+        padding: 30px;
+    }
+
+    .buy-box {
+        position: relative;
+        top: 25px;
+        left: calc(50% - 190px);
+        margin-bottom: 4%;
+        font-size: 0.8em;
+    }
+
+    .book-details {
+        height: auto;
+    }
+
+    .book-details article {
+        font-size: 0.95em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        float: right;
+        position: relative;
+        right: 0;
+        width: 65%;
+    }
+
+    .book-details article h2 {
+        font-size: 1.7em;
+        margin-bottom: 0.2em;
+    }
+    .details, .summary, .author {
+        display: block;
+        margin: 1.5em auto;
+        width: 98%;
+    }
+
+    .details table {
+        margin: 0 auto;
+    }
+
+    .details table td {
+        width: 30%;
+    }
+    .about-the-book h3, .author h3 {
+        text-align: center;
+        padding: 0 0 0.6em 0;
+    }
+    .quote {
+        padding-top: 0.3em;
+    }
+    .buy-box form button {
+        width: 50%;
+    }
+    .author figure {
+        width: 250px;
+        float: right;
+        padding: 1% 0 1% 2.5%;
+    }
+
+}
+
+@media screen and (max-width: 830px) and (min-width: 711px) {
+
+    main {
+        width: 680px;
+        padding: 20px;
+    }
+
+    .buy-box {
+        top: 20px;
+        margin-bottom: 3%;
+    }
+
+    .book-details article {
+        font-size: 0.9em;
+    }
+
+    .book-details article h2 {
+        font-size: 1.6em;
+    }
+
+    .details tr > td:first-child {
+        font-weight: 500;
+        padding-left: 5%;
+    }
+
+    .about-the-book h3, .author h3 {
+        text-align: center;
+        padding: 0 0 0.6em 0;
+    }
+
+    .author figure {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+
+    main {
+        font-size: 22px;
+        width: 97%;
+        padding: 3%;
+    }
+
+    .book-details figure, .book-details article {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .buy-box {
+        display: block;
+        margin: 0 auto;
+        position: static;
+        width: 95%;
+        max-width: 300px;
+        font-size: 0.8em;
+    }
+
+    .buy-box form {
+        padding: 5% 3%;
+    }
+
+    .buy-box input {
+        padding: 0.8em 0.3em;
+        text-align: center;
+    }
+    .book-details {
+        height: auto;
+    }
+
+    .book-details article {
+        font-size: 0.9em;
+        flex-direction: column;
+        position: relative;
+        right: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .book-details > article > .praise {
+        text-align: center;
+    }
+
+    .book-details article h2 {
+        font-size: 1.8em;
+    }
+
+    .details, .summary, .author {
+        display: block;
+        margin: 1em auto;
+        width: 98%;
+    }
+
+    .details table {
+        margin: 0 auto;
+    }
+
+    .details table td {
+        width: 30%;
+    }
+
+    .details tr > td:first-child {
+        font-weight: 500;
+        padding-left: 5%;
+    }
+
+    .about-the-book h3, .author h3 {
+        text-align: center;
+        padding: 0 0 0.6em 0;
+    }
+
+    .author figure {
+        width: 95%;
+        margin: 0 auto;
+        display: block;
+        float: none;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    .buy-box > form > button {
+        width: 90%;
+        font-size: 0.8em;
+    }
+
+    .buy-box > form > input {
+        width: 3em;
+        margin-bottom: 2%;
+    }
+
+    .details table {
+        font-size: 1em;
+    }
+
+}

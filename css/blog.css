@@ -1,0 +1,341 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i');
+*{
+    margin: 0;
+    padding: 0;
+}
+#blog {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', serif;
+    font-size: 16px;
+    width: 100%;
+}
+header {
+    margin: 0;
+    padding: 0;
+}
+
+.blog-name-page {
+    background-color: #515570;
+    margin: 0;
+}
+
+.blog-name-page > h1 {
+    margin-top: 0;
+    padding-top: 20px;
+    margin-bottom: 0;
+    color: white;
+    text-align: center;
+    font-size: 5em;
+}
+
+.blog-name-page > p {
+    margin-top: 10px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    font-size: 2em;
+}
+
+.blog-name-page > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+.blog-name-page > p > a:hover {
+    color: #91d2ff;
+}
+/*            */
+div.books-search {
+    width: 100%;
+    background: #fafafa;
+}
+
+div.container {
+    width: 100%;
+    padding: 25px 0px 25px 0px;
+    text-align: center;
+}
+
+div.books-group {
+    display: inline-block;
+    max-width: 90%;
+    margin-right: 15px;
+    margin-bottom: 7px;
+}
+
+.tipes-control {
+    padding: 5px;
+    width: 265px;
+    max-width: 90%;
+    border-radius: 5px;
+    border: none;
+    background: #eaf1fc;
+    color:#6f737a;
+}
+
+button.btn {
+    padding: 5px;
+    width: 265px;
+    max-width: 90%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #313335;
+    color:#fafafa;
+    text-transform: uppercase;
+}
+
+button.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+/*            */
+
+#main-blog {
+    background-color: #B8D0D4;
+    padding: 4% 2%;
+    width: auto;
+
+}
+
+#main-blog > .container {
+    width: 1300px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.articles {
+    display: inline-block;
+    width: 68%;
+    text-align: justify;
+}
+
+#main-blog > div > div > article {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+    background-color: white;
+    display: block;
+    border-radius: 15px;
+    padding: 5% 5% 2% 5%;
+    box-sizing: border-box;
+}
+
+article > span {
+    color: #a7a7a7;
+}
+article > h2 {
+    margin: 0 0 5px;
+    padding: 0;
+    color: #222222;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.35;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.posted-by {
+    font-size: 13px;
+    font-style: italic;
+    display: block;
+    color: #757575;
+}
+
+article > figure {
+    margin: 30px 0;
+    background: #f5f5f5;
+    text-align: center;
+    border-radius: 8px;
+}
+article > figure img{
+    border-radius: 8px;
+}
+.article-image {
+    width: 100%;
+}
+
+.article-content > p {
+    font-family: "Montserrat", sans-serif;
+    color: #757575;
+    margin-bottom: 30px;
+    line-height: 1.2em;
+}
+
+#asside-blog {
+    display: inline-block;
+    float: right;
+    width: 28%;
+}
+
+.top-rated {
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 13px;
+    background-color: white;
+    width: 100%;
+}
+
+.top-rated > h3 {
+    color: #222222;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.top-rated-product {
+    display: block;
+    margin-bottom: 20px;
+    height: 80px;
+    text-decoration: none;
+    color: #222222;
+}
+
+.top-rated-product > figure {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.top-rated-product > figure > img {
+    width: 51px;
+    height: 78px;
+    margin-right: 7px;
+}
+
+.top-rated-product > div {
+    padding: 5px;
+}
+
+.top-rated-product-name {
+    display: inline;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.stars:before {
+    font-family: FontAwesome, serif;
+    content: "\f005\f005\f005\f005\f005";
+    font-size: 1.2em;
+}
+
+.stars {
+    margin-top: 8px;
+}
+
+.top-rated-product-price {
+    display: inline;
+    margin-top: 0;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.recent-posts {
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 13px;
+    background-color: white;
+    float: none;
+    width: 100%;
+}
+
+.recent-posts > h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #222222;
+    letter-spacing: 2px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.recent-posts > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.recent-posts > ul > li {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.recent-posts > ul > li > a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 1.2em;
+}
+
+.recent-posts > ul > li > a:hover {
+    color: #a7bad5;
+}
+
+.categories {
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 13px;
+    background-color: white;
+    float: none;
+    width: 100%;
+}
+
+.categories > h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #222222;
+    letter-spacing: 2px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.categories > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.categories > ul > li {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.categories > ul > li > a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+.categories > ul > li > a:hover {
+    color: #a7bad5;
+}
+@media screen and (max-width: 770px){
+
+    #asside-blog {
+        display:block;
+        float: none;
+        width: 97%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .articles {
+        display:block;
+        width: 97%;
+        margin: 0 auto;
+    }
+}
