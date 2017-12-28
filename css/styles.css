@@ -1,0 +1,589 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+div.header-background {
+    width: 100%;
+    height: 850px;
+    display: inline-block;
+    background-image: url("../images/vintage-books.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav.top-nav {
+    margin-top: 45px;
+    color: #ffffff;
+    width: 100%;
+    height: 50px;
+}
+
+nav p.brand {
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 90px;
+    text-shadow: 0 0 8px #3C3F41;
+    cursor: pointer;
+}
+
+nav ul.nav-primary {
+    float: right;
+    margin-right: 100px;
+}
+
+nav ul.nav-primary li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 50px;
+    text-transform: uppercase;
+    padding: 18px 0px 5px 0px;
+}
+
+nav ul.nav-primary li a {
+    text-decoration: none;
+    text-shadow: 0 0 8px #3C3F41;
+    color: #ffffff;
+}
+
+nav ul.nav-primary li:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #70e9ff;
+}
+
+nav ul.nav-primary li.icon {
+    display: none;
+}
+
+header {
+    text-align: center;
+}
+
+h1.header-title {
+    text-transform: capitalize;
+    font-weight: 100;
+    margin: 210px 15px 15px 15px;
+    color: #ffffff;
+    font-size: 42px;
+    text-shadow: 0 0 8px #3C3F41;
+}
+
+h3.header-subtitle {
+    text-align: center;
+    font-weight: 100;
+    color: #ffffff;
+    text-shadow: 0 0 8px #3C3F41;
+}
+
+div.books-search {
+    width: 100%;
+    background: #fafafa;
+}
+
+div.container {
+    width: 100%;
+    padding: 25px 0px 25px 0px;
+    text-align: center;
+}
+
+div.books-group {
+    display: inline-block;
+    margin-right: 15px;
+    max-width: 95%;
+    margin-bottom: 7px;
+}
+
+.tipes-control {
+    padding: 5px;
+    width: 265px;
+    max-width: 90%;
+    border-radius: 5px;
+    border: none;
+    background: #eaf1fc;
+    color: #6f737a;
+}
+
+button.btn {
+    padding: 5px;
+    width: 265px;
+    max-width: 90%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #313335;
+    color: #fafafa;
+    text-transform: uppercase;
+}
+
+button.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+button.btn i {
+    margin-right: 10px;
+}
+
+section.main-books {
+    text-align: center;
+}
+
+section.main-books h2 {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-size: 36px;
+    font-weight: lighter;
+    padding-top: 30px;
+}
+
+div.articles-container {
+    width: 100%;
+    margin-top: 50px;
+    text-transform: capitalize;
+
+}
+
+div.articles-container article {
+    display: inline-block;
+    margin-left: 10px;
+    border: 1px solid #A6D0DE;
+    border-radius: 10px;
+    padding: 20px 20px 0px 20px;
+    background-color: #fafafa;
+    margin-bottom: 10px;
+}
+
+article img.popular-books {
+    width: 180px;
+    height: 245px;
+    border: 1px solid #A6D0DE;
+    padding: 5px;
+    box-shadow: 3px 3px 10px #888888;
+}
+
+article img.popular-books:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+article h4.book-name {
+    margin: 20px 0 20px 0;
+    font-weight: lighter;
+}
+
+article h5.book-author {
+    margin: 20px 0 20px 0;
+    font-weight: lighter;
+    color: #c4cad3;
+}
+
+article a.details {
+    background: none;
+    border: 1px solid lightgray;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 7px 10px;
+    border-right: none;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+}
+
+article a.buy {
+    background: none;
+    border: 1px solid lightgray;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 7px 10px;
+    border-left: 1px solid lightgray;
+    margin-left: -5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+}
+
+article a.buy:hover {
+    background-color: #a0aaba;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+article a.details:hover {
+    background-color: #a0aaba;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+section.browse-collection {
+    opacity: 0.8;
+    text-align: center;
+    width: 100%;
+    background-image: url("../images/books-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 60px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-bottom: 113px;
+}
+
+section.browse-collection h2 {
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: lighter;
+    padding-top: 110px;
+    margin-bottom: 10px;
+    color: #fafafa;
+}
+
+section.browse-collection h3 {
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+section.browse-collection h3 a.collection:hover {
+    color: #fafafa;
+    cursor: pointer;
+}
+
+div.collection-info {
+    width: 100%;
+    margin-top: 80px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+section.books-info-section {
+    width: 100%;
+    text-align: center;
+}
+
+section.books-info {
+    display: inline-block;
+    width: 32%;
+    height: 200px;
+    text-align: center;
+    margin-top: 30px;
+    vertical-align: top;
+}
+
+section img.icon-one-size {
+    width: 78px;
+    height: 78px;
+    margin-bottom: 10px;
+}
+
+section.books-info h2 {
+    margin-bottom: 15px;
+    font-weight: lighter;
+}
+
+section.books-info p {
+    color: #6a6f77;
+    line-height: 1.5;
+}
+
+section.feautured-book {
+    margin-top: 130px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+div.best-book {
+    width: 90%;
+    margin: 0 auto;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+div.best-book h1 {
+    margin-bottom: 20px;
+    color: #c4cad3;
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+
+div.best-book h2 {
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+
+div.best-book h3 {
+    font-size: 14px;
+    color: #c4cad3;
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+
+div.best-book article {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    line-height: 1.5;
+    margin-top: 30px;
+    text-align: left;
+}
+
+div.blog-container article {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 20px 20px 0px 20px;
+}
+
+img.book-front-cover {
+    width: 333px;
+    height: 431px;
+    display: inline-block;
+}
+
+a.read-more {
+    font-size: 14px;
+    color:#5A5462;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 20px;
+    background: none;
+    line-height: 30px;
+    outline: none;
+    border-radius: 25px;
+    border: 2px solid #313335;
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+a.read-more:hover {
+    color: #fafafa;
+    cursor: pointer;
+    background-color:#5A5462;
+}
+
+section.blog-section {
+    text-align: center;
+    background-color: #fafafa;
+    border-top: 2px dashed #EBEBEB;
+    border-bottom: 2px dashed #EBEBEB;
+}
+
+section.blog-section h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: lighter;
+    padding-top: 40px;
+}
+
+div.blog-container {
+    width: 90%;
+    margin: 0 auto;
+    text-transform: capitalize;
+
+}
+
+article img.blog-books {
+    width: 242px;
+    height: 120px;
+}
+
+article h2.blog-theme {
+    margin: 10px 0 10px 0;
+    font-weight: lighter;
+    font-size: 18px;
+    text-align: left;
+}
+
+article h3.blog-date {
+    font-weight: lighter;
+    font-size: 15px;
+    color: #c4cad3;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+section.blog-section article p {
+    text-align: left;
+    font-weight: lighter;
+    font-size: 14px;
+    box-shadow: 0 0 black;
+    margin-top: 30px;
+    width: 243px;
+    padding-bottom: 30px;
+}
+
+section.feautured-book article p {
+    text-align: left;
+    font-weight: lighter;
+    font-size: 14px;
+    box-shadow: 0 0 black;
+    margin-top: 30px;
+}
+
+section.books-discount {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+section.books-discount img {
+    width: 100%;
+}
+
+footer {
+    color: #fafafa;
+    width: 100%;
+    margin-top: 30px;
+    padding: 50px 0 20px;
+    text-align: center;
+    background: #2f2b35;
+    text-transform: capitalize;
+}
+
+nav.bottom-nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav.bottom-nav ul li a {
+    color: #fafafa;
+}
+
+nav.bottom-nav ul li:hover a {
+    color: #a7a7a7;
+}
+
+footer p.copyright {
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 989px) {
+    div.best-book article {
+        width: 49%;
+    }
+
+    div.best-book article.image-container {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul.nav-primary {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    nav ul.nav-primary li.nav-item {
+        display: none;
+    }
+
+    nav ul.nav-primary li.icon {
+        text-align: left;
+        display: block;
+        padding-left: 10%;
+    }
+
+    nav ul.nav-primary li {
+        margin-right: 0;
+    }
+    div.header-background {
+        height: auto;
+        background: #2F2B35;
+    }
+    h1.header-title {
+        margin-top: 60px;
+        font-size: 38px;
+    }
+    h3.header-subtitle {
+    margin-bottom: 20px;
+    }
+    nav ul.nav-primary li {
+        padding: 12px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-background > .top-nav > p.brand {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .header-background > .top-nav > p.brand {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+    nav ul.nav-primary.responsive li.nav-item {
+        float: none;
+        display: block;
+        text-align: left;
+        padding-left: 25%;
+    }
+    nav ul.nav-primary.responsive li.nav-item:hover {
+        cursor: pointer;
+        border-bottom: 2px solid #70e9ff;
+        border-top: 2px solid #70e9ff;
+    }
+}
+
+@media screen and (max-width: 689px) {
+    div.best-book article {
+        width: 100%;
+    }
+
+    div.best-book article.image-container {
+        text-align: center;
+    }
+
+    div.best-book article {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 518px) {
+    section.books-info {
+        width: 66%;
+        vertical-align: inherit;
+    }
+
+    img.book-front-cover {
+        width: 300px;
+        height: 400px;
+    }
+    div.articles-container{
+        width: 87%;
+        margin: 30px auto;
+    }
+    div.articles-container article {
+        display: block;
+        margin: 15px auto;
+        padding: 5% 5% 0px 5%;
+        background-color: #fafafa;
+        width: 90%;
+        max-width: 300px;
+    }
+    article img.popular-books {
+        width: 95%;
+        height: auto;
+        border: 1px solid #A6D0DE;
+        padding: 5px;
+        box-shadow: 3px 3px 10px #888888;
+        margin: 0 auto;
+    }
+}
