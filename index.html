@@ -7,220 +7,234 @@
     <link rel="stylesheet" href="css/styles.css"/>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <script type="text/javascript" src="js/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
     <script src="js/loader.js"></script>
+    <script src="js/burger-menu.js"></script>
    
 
 </head>
 <body>
-    <div class="loader-cube"></div>
-    <div class="header-background">
-        <nav class="top-nav">
-            <p class="brand">Book's Gate &trade;</p>
-            <ul id="nav-primary" class="nav-primary">
-                <li class="icon"><a href="javascript:void(0);" style="font-size:30px;" onclick="myFunction()">&#9776;</a>
-                </li>
-                <li class="nav-item"><a href="index.html">home</a></li>
-                <li class="nav-item"><a href="bookstore.html">bookstore</a></li>
-                <li class="nav-item"><a href="blog.html">blog</a></li>
-                <li class="nav-item"><a href="login.html">my account</a></li>
-                <li class="nav-item"><a href="contact.html">contact</a></li>
-            </ul>
-        </nav>
-        <header>
-            <h1 class="header-title">
-                "A room without books is like a body without a soul."
-            </h1>
-
-            <h3 class="header-subtitle">
-                Marcus Tullius Cicero
-            </h3>
-        </header>
+<div class="loader-cube"></div>
+<div class="header-background">
+    <div class="burger responsive">
+        <div class="closeburger">
+        <div class="middleburger"></div>
+        </div>
+        <ul class="burger-menu">
+            <li><a href="index.html">home</a></li>
+            <li><a href="bookstore.html">bookstore</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="login.html">my account</a></li>
+            <li><a href="contact.html">contact</a></li>    
+        </ul>
     </div>
 
-    <main>
-        <div class="books-search">
-            <div class="container">
-                <div class="books-group">
-                    <input name="s" value="" type="text" class="tipes-control" id="keyword" placeholder="Book Title">
-                </div>
+    <nav class="top-nav">
+        <p class="brand">Book's Gate &trade;</p>
+                
+            <ul id="nav-primary" class="nav-primary">       
+            <li class="nav-item"><a class= "underline" href="index.html">home</a></li>
+            <li class="nav-item"><a class= "underline" href="bookstore.html">bookstore</a></li>
+            <li class="nav-item"><a class= "underline" href="blog.html">blog</a></li>
+            <li class="nav-item"><a class= "underline" href="login.html">my account</a></li>
+            <li class="nav-item"><a class= "underline" href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="header-title">
+            "A room without books is like a body without a soul."
+        </h1>
 
-                <div class="books-group">
-                    <select name='books-tipes' class='tipes-control'>
-                        <option value='0'>Book Category</option>
-                        <option value="drama">Drama</option>
-                        <option value="inspiration">&nbsp;&nbsp;&nbsp;Inspiration</option>
-                        <option value="love-story">&nbsp;&nbsp;&nbsp;Love Story</option>
-                        <option value="life-style">Life Style</option>
-                        <option value="business">&nbsp;&nbsp;&nbsp;Business</option>
-                        <option value="culture">&nbsp;&nbsp;&nbsp;Culture</option>
-                        <option value="science">Science</option>
-                    </select>
-                </div>
+        <h3 class="header-subtitle">
+            Marcus Tullius Cicero
+        </h3>
+    </header>
+</div>
 
-                <div class="books-group">
-                    <select name='book_author' id='book_author' class='tipes-control' onchange="location = this.value;">
-                        <option value='0'>Book Author</option>
-                        <option value="anna-karenina.html">Tolstoy</option>
-                        <option value="the-cuban-affair.html">Demile</option>
-                        <option value="pulp-fiction.html">Tarantino</option>
-                        <option value="the-great-gatsby.html">Fitzgerald</option>
-                    </select>
-                </div>
+<main>
+    <div class="books-search">
+        <div class="container">
+            <div class="books-group">
+                <input name="s" value="" type="text" class="tipes-control" id="keyword" placeholder="Book Title">
+            </div>
 
-                <div class="books-group">
-                    <input type="hidden" name="post_type" value="product"/>
-                    <button type="submit" class="btn btn-primary ">
-                        Find Book
-                    </button>
-                </div>
+            <div class="books-group">
+                <select name='books-tipes' class='tipes-control'>
+                    <option value='0'>Book Category</option>
+                    <option value="drama">Drama</option>
+                    <option value="inspiration">&nbsp;&nbsp;&nbsp;Inspiration</option>
+                    <option value="love-story">&nbsp;&nbsp;&nbsp;Love Story</option>
+                    <option value="life-style">Life Style</option>
+                    <option value="business">&nbsp;&nbsp;&nbsp;Business</option>
+                    <option value="culture">&nbsp;&nbsp;&nbsp;Culture</option>
+                    <option value="science">Science</option>
+                </select>
+            </div>
+
+            <div class="books-group">
+                <select name='book_author' id='book_author' class='tipes-control' onchange="location = this.value;">
+                    <option value='0'>Book Author</option>
+                    <option value="anna-karenina.html">Tolstoy</option>
+                    <option value="the-cuban-affair.html">Demile</option>
+                    <option value="pulp-fiction.html">Tarantino</option>
+                    <option value="the-great-gatsby.html">Fitzgerald</option>
+                </select>
+            </div>
+
+            <div class="books-group">
+                <input type="hidden" name="post_type" value="product"/>
+                <button type="submit" class="btn btn-primary ">
+                        <a href="#" class="button sweepButton"> Find Book </a>
+                </button>
             </div>
         </div>
+    </div>
 
-        <section class="main-books">
-            <h2>popular books</h2>
-            <div class="articles-container">
-                <article>
-                    <a href="anna-karenina.html">
-                        <img class="popular-books" src="images/anna-karenina.jpg" alt="anna-karenina"/></a>
-                    <h4 class="book-name">anna karenina</h4>
-                    <h5 class="book-author">tolstoy</h5>
-                    <a class="details" href="anna-karenina.html">details</a>
-                    <a class="buy" href="anna-karenina.html">buy</a>
-                </article>
+    <section class="main-books">
+        <h2>popular books</h2>
+        <div class="articles-container">
+            <article>
+                <a href="anna-karenina.html">
+                    <img class="popular-books" src="images/anna-karenina.jpg" alt="anna-karenina"/></a>
+                <h4 class="book-name">anna karenina</h4>
+                <h5 class="book-author">tolstoy</h5>
+                <a class="details" href="anna-karenina.html">details</a>
+                <a class="buy" href="anna-karenina.html">buy</a>
+            </article>
 
-                <article>
-                    <a href="the-great-gatsby.html">
-                        <img class="popular-books" src="images/gatsby.jpg" alt="great-gatsby"/></a>
-                    <h4 class="book-name">the great gatsby</h4>
-                    <h5 class="book-author">fitzgerald</h5>
-                    <a class="details" href="the-great-gatsby.html">details</a>
-                    <a class="buy" href="the-great-gatsby.html">buy</a>
-                </article>
+            <article>
+                <a href="the-great-gatsby.html">
+                    <img class="popular-books" src="images/gatsby.jpg" alt="great-gatsby"/></a>
+                <h4 class="book-name">the great gatsby</h4>
+                <h5 class="book-author">fitzgerald</h5>
+                <a class="details" href="the-great-gatsby.html">details</a>
+                <a class="buy" href="the-great-gatsby.html">buy</a>
+            </article>
 
-                <article>
-                    <a href="pulp-fiction.html">
-                        <img class="popular-books" src="images/pulp-fiction.jpg" alt="pulp-fiction"/></a>
-                    <h4 class="book-name">pulp fiction</h4>
-                    <h5 class="book-author">tarantino</h5>
-                    <a class="details" href="pulp-fiction.html">details</a>
-                    <a class="buy" href="pulp-fiction.html">buy</a>
-                </article>
+            <article>
+                <a href="pulp-fiction.html">
+                    <img class="popular-books" src="images/pulp-fiction.jpg" alt="pulp-fiction"/></a>
+                <h4 class="book-name">pulp fiction</h4>
+                <h5 class="book-author">tarantino</h5>
+                <a class="details" href="pulp-fiction.html">details</a>
+                <a class="buy" href="pulp-fiction.html">buy</a>
+            </article>
 
-                <article>
-                    <a href="the-cuban-affair.html">
-                        <img class="popular-books" src="images/the-cuban-affair.jpg" alt="the-cuban-affair"/></a>
-                    <h4 class="book-name">the cuban affair</h4>
-                    <h5 class="book-author">demile</h5>
-                    <a class="details" href="the-cuban-affair.html">details</a>
-                    <a class="buy" href="the-cuban-affair.html">buy</a>
-                </article>
-            </div>
+            <article>
+                <a href="the-cuban-affair.html">
+                    <img class="popular-books" src="images/the-cuban-affair.jpg" alt="the-cuban-affair"/></a>
+                <h4 class="book-name">the cuban affair</h4>
+                <h5 class="book-author">demile</h5>
+                <a class="details" href="the-cuban-affair.html">details</a>
+                <a class="buy" href="the-cuban-affair.html">buy</a>
+            </article>
+        </div>
 
+    </section>
+
+    <section class="browse-collection">
+        <h2>browse through our special collection of books</h2>
+        <h3><a href="#" class="collection">browse collection --></a></h3>
+    </section>
+
+    <section class="books-info-section">
+        <section class="books-info">
+            <img class="icon-one-size" src="images/open-book-icon.png" alt="open-book"/>
+            <h2>Tons of Books</h2>
+            <p>Today's blog features a lot of great books from Del Rey, almost all of which you have</p>
         </section>
 
-        <section class="browse-collection">
-            <h2>browse through our special collection of books</h2>
-            <h3><a href="#" class="collection">browse collection --></a></h3>
+        <section class="books-info">
+            <img class="icon-one-size" src="images/icon-pencil.png" alt="icon-pencil"/>
+            <h2>Hundreds of Authors</h2>
+            <p>Some writers have had prolific careers with hundreds of their works being published</p>
         </section>
 
-        <section class="books-info-section">
-            <section class="books-info">
-                <img class="icon-one-size" src="images/open-book-icon.png" alt="open-book"/>
-                <h2>Tons of Books</h2>
-                <p>Today's blog features a lot of great books from Del Rey, almost all of which you have</p>
-            </section>
-
-            <section class="books-info">
-                <img class="icon-one-size" src="images/icon-pencil.png" alt="icon-pencil"/>
-                <h2>Hundreds of Authors</h2>
-                <p>Some writers have had prolific careers with hundreds of their works being published</p>
-            </section>
-
-            <section class="books-info">
-                <img class="icon-one-size" src="images/icon-bookmarks.png" alt="icon-bookmarks"/>
-                <h2>Easily Bookmarked</h2>
-                <p>Bookmarks are a great way to tag pages you want to revisit.</p>
-            </section>
+        <section class="books-info">
+            <img class="icon-one-size" src="images/icon-bookmarks.png" alt="icon-bookmarks"/>
+            <h2>Easily Bookmarked</h2>
+            <p>Bookmarks are a great way to tag pages you want to revisit.</p>
         </section>
+    </section>
 
-        <section class="feautured-book">
-            <div class="best-book">
-                <article>
-                    <h1>feautured book</h1>
-                    <h2 class="feautured-book-name"><a href="#">the great gatsby</a></h2>
-                    <h3 class="feautured-book-author">f.scott fitzgerald</h3>
-                    <p> The narrator, Nick Carraway, is a young Yale graduate who works as a bond broker in Manhattan. He rents a house at West
-                        Egg on Long Island across the water from his cousin, Daisy. His neighbour there is the enigmatic Jay Gatsby, 
-                        a self-made millionaire from the Midwest who lives the high life from the profits of his minor criminal activities.
-                        Gatsby’s infamous parties are attended by many guests who do not know their host. Nick becomes cynically 
-                        fascinated and transfixed by Gatsby, and their friendship nurtures many confidences. Carraway learns that Gatsby 
-                        and Daisy had been in love, but that Daisy had not waited for him to return from the war and had married another.
-                        Nick arranges a meeting between 
-                    </p>
-                    <a class="read-more" href="the-great-gatsby.html">read more</a>
-                </article>
-                <article class="image-container">
-                    <img class="book-front-cover" src="images/best-book.jpg" alt="best-book"/>
-                </article>
-            </div>
-        </section>
+    <section class="feautured-book">
+        <div class="best-book">
+            <article>
+                <h1>feautured book</h1>
+                <h2 class="feautured-book-name"><a href="#">the great gatsby</a></h2>
+                <h3 class="feautured-book-author">f.scott fitzgerald</h3>
+                <p> The narrator, Nick Carraway, is a young Yale graduate who works as a bond broker in Manhattan. He rents a house at West
+                    Egg on Long Island across the water from his cousin, Daisy. His neighbour there is the enigmatic Jay Gatsby, 
+                    a self-made millionaire from the Midwest who lives the high life from the profits of his minor criminal activities.
+                    Gatsby’s infamous parties are attended by many guests who do not know their host. Nick becomes cynically 
+                    fascinated and transfixed by Gatsby, and their friendship nurtures many confidences. Carraway learns that Gatsby 
+                    and Daisy had been in love, but that Daisy had not waited for him to return from the war and had married another.
+                    Nick arranges a meeting between 
+                </p>
+                <a class="read-more" href="the-great-gatsby.html">read more</a>
+            </article>
+            <article class="image-container">
+                <img class="book-front-cover" src="images/best-book.jpg" alt="best-book"/>
+            </article>
+        </div>
+    </section>
 
-        <section class="blog-section">
-            <h1>from our blog</h1>
-            <div class="blog-container">
-                <article>
-                    <img class="blog-books" src="images/books.jpg" alt="books"/>
-                    <h2 class="blog-theme"><a href="blog.html">Building A Brighter Future</a></h2>
-                    <h3 class="blog-date">june 17, 2017</h3>
-                    <p> Most blogs are focused on one issue. Whether you want to create a blog dedicated to your passion...
-                    </p>
-                </article>
+    <section class="blog-section">
+        <h1>from our blog</h1>
+        <div class="blog-container">
+            <article>
+                <img class="blog-books" src="images/books.jpg" alt="books"/>
+                <h2 class="blog-theme"><a href="blog.html">Building A Brighter Future</a></h2>
+                <h3 class="blog-date">june 17, 2017</h3>
+                <p> Most blogs are focused on one issue. Whether you want to create a blog dedicated to your passion...
+                </p>
+            </article>
 
-                <article>
-                    <img class="blog-books" src="images/lap-books.jpg" alt="lap-books"/>
-                    <h2 class="blog-theme"><a href="blog.html">Nelson DeMille hits</a></h2>
-                    <h3 class="blog-date">july 23, 2017</h3>
-                    <p> It’s DeMille’s second No. 1 debut; Radiant Angel, which featured recurring character Detective...</p>
-                </article>
+            <article>
+                <img class="blog-books" src="images/lap-books.jpg" alt="lap-books"/>
+                <h2 class="blog-theme"><a href="blog.html">Nelson DeMille hits</a></h2>
+                <h3 class="blog-date">july 23, 2017</h3>
+                <p> It’s DeMille’s second No. 1 debut; Radiant Angel, which featured recurring character Detective...</p>
+            </article>
 
-                <article>
-                    <img class="blog-books" src="images/books.png" alt="books-opened"/>
-                    <h2 class="blog-theme"><a href="blog.html">Building A Brighter Future</a></h2>
-                    <h3 class="blog-date">august 24, 2017</h3>
-                    <p> Most blogs are focused on one issue. Whether you want to create a blog dedicated to your passion...</p>
-                </article>
+            <article>
+                <img class="blog-books" src="images/books.png" alt="books-opened"/>
+                <h2 class="blog-theme"><a href="blog.html">Building A Brighter Future</a></h2>
+                <h3 class="blog-date">august 24, 2017</h3>
+                <p> Most blogs are focused on one issue. Whether you want to create a blog dedicated to your passion...</p>
+            </article>
 
-                <article>
-                    <img class="blog-books" src="images/books-blog.jpg" alt="books-blog"/>
-                    <h2 class="blog-theme"><a href="blog.html">Nelson DeMille hits</a></h2>
-                    <h3 class="blog-date">october 30, 2017</h3>
-                    <p>It’s DeMille’s second No. 1 debut; Radiant Angel, which featured recurring character Detective...</p>
-                </article>
-            </div>
+            <article>
+                <img class="blog-books" src="images/books-blog.jpg" alt="books-blog"/>
+                <h2 class="blog-theme"><a href="blog.html">Nelson DeMille hits</a></h2>
+                <h3 class="blog-date">october 30, 2017</h3>
+                <p>It’s DeMille’s second No. 1 debut; Radiant Angel, which featured recurring character Detective...</p>
+            </article>
+        </div>
 
-        </section>
+    </section>
 
-        <section class="books-discount">
-            <img src="images/book-sale.jpg" alt="book-sale"/>
-        </section>
+    <section class="books-discount">
+        <img src="images/book-sale.jpg" alt="book-sale"/>
+    </section>
 
-    </main>
+</main>
 
-    <footer>
-        <nav class="bottom-nav">
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="bookstore.html">bookstore</a></li>
-                <li><a href="blog.html">blog</a></li>
-                <li><a href="login.html">my account</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-        </nav>
-        <p class="copyright">Vyara Durcheva © 2018</p>
+<footer>
+    <nav class="bottom-nav">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="bookstore.html">bookstore</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="login.html">my account</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+    <p class="copyright" > VDurcheva © 2018</p>
 
-    </footer>
+</footer>
      
 
 </body>

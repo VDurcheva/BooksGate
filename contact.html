@@ -8,19 +8,39 @@
     <link rel="stylesheet" type="text/css" href="css/contact.css"/>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script>"http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"</script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/burger-menu.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<div class="header-background">
+    <div class="loader-cube"></div>
+    <div class="header-background">
+        <div class="burger responsive">
+            <div class="closeburger">
+            <div class="middleburger"></div>
+            </div>
+            <ul class="burger-menu">
+                <li><a href="index.html">home</a></li>
+                <li><a href="bookstore.html">bookstore</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="login.html">my account</a></li>
+                <li><a href="contact.html">contact</a></li>    
+            </ul>
+        </div>
+
     <nav class="top-nav">
         <p class="brand">Book's Gate &trade;</p>
         <ul id="nav-primary" class="nav-primary">
-            <li class="icon"><a href="javascript:void(0);" style="font-size:30px;" onclick="myFunction()">&#9776;</a></li>
-            <li class="nav-item"><a href="index.html">home</a></li>
-            <li class="nav-item"><a href="bookstore.html">bookstore</a></li>
-            <li class="nav-item"><a href="blog.html">blog</a></li>
-            <li class="nav-item"><a href="login.html">my account</a></li>
-            <li class="nav-item"><a href="contact.html">contact</a></li>
+            <li class="icon"><a href="javascript:void(0);" style="font-size:30px;" onclick="myFunction()">&#9776;</a>
+            </li>
+            <li class="nav-item"><a class= "underline" href="index.html">home</a></li>
+            <li class="nav-item"><a class= "underline" href="bookstore.html">bookstore</a></li>
+            <li class="nav-item"><a class= "underline" href="blog.html">blog</a></li>
+            <li class="nav-item"><a class= "underline" href="login.html">my account</a></li>
+            <li class="nav-item"><a class= "underline" href="contact.html">contact</a></li>
         </ul>
     </nav>
 </div>
@@ -74,7 +94,7 @@
                 <li><a href="contact.html">contact</a></li>
             </ul>
         </nav>
-        <p class= "copyright">istanbul team © 2017</p>
+        <p class= "copyright">VDurcheva © 2017</p>
     </footer>
 </body>
 </html>
